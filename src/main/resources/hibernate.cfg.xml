@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<!DOCTYPE hibernate-configuration PUBLIC 
+        "-//Hibernate/Hibernate Configuration DTD 3.9//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name = "conecction.url">jdbc:sqlserver://igluser.database.windows.net\\prueba:1433;databaseName=SwapSnap;encrypt=true;trustServerCertificate=true;</property>
+        <property name = "conecction.username">iglu</property>
+        <property name = "conecction.password">30606933Eri</property>
+        <property name = "conecction.dialect">org.hibernate.dialect.SQLServerDialect</property>
+        
+        <property name = "hibernate.hbm2ddl.auto">update</property>
+        <property name = "hibernate.show_sql">true</property>
+    </session-factory>        
+</hibernate-configuration>
+
